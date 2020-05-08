@@ -58,11 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
-
-CORS_ORIGIN_WHITELIST = (
-    'https://asrt.herokuapp.com',
-)
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 ROOT_URLCONF = 'asrt.urls'
