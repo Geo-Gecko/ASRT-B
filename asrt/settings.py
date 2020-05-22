@@ -58,7 +58,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'https://asrt.herokuapp.com',
+    'http://localhost:3000'
+)
 
 
 ROOT_URLCONF = 'asrt.urls'
@@ -147,4 +152,4 @@ STATIC_URL = '/static/'
 import django_heroku
 
 # COMMENT THIS OUT IF RUNNING LOCALLY. ALTHOUGH STHG MORE SEAMLESS CAN BE SETUP 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
