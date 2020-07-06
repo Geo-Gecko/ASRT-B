@@ -18,7 +18,7 @@ def view(request):
     connection = psycopg2.connect(
         host=db_params.hostname, database=db_params.path[1:],
         user=db_params.username, password=db_params.password
-    )# psycopg2.connect(db_connection)
+    )
         # creating the cursor (vessel to the db)
     cursor=connection.cursor()
         # executing the query
