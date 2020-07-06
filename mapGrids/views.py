@@ -44,7 +44,7 @@ SELECT row_to_json(fc) FROM
             (
             SELECT
               agric_indicator.ppp_sum,agric_indicator.soil_copper,agric_indicator.soil_phos,agric_indicator.soil_potas,agric_indicator.soil_boron,
-              agric_indicator.soil_alumi,agric_indicator.soil_iron,soil_magne,agric_indicator.ndwi_jfm,agric_indicator.rainfall,
+              agric_indicator.soil_alumi,agric_indicator.soil_iron,soil_magne,agric_indicator.ndwi_jfm,agric_indicator.presp_jfm,
               agric_indicator.ndvi_jfm,agric_indicator.land_cover,agric_indicator.slope,agric_indicator.elevation,agric_indicator.lst_jfm,
               agric_indicator.gs_id
                 FROM public.agric_indicator
