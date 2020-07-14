@@ -26,11 +26,9 @@ def view(request):
 # rainfall,soil_alumi,soil_potas,(lst_jfm+lst_amj+lst_jas+lst_ond)/4,slope,elevation,
 # land_cover, gs_id from public.agric_indicator where gs_id<10 ''')
 
-    cursor.execute('''select ppp_sum,soil_copper,soil_phos,soil_potas,soil_boron,soil_alumi,soil_iron,soil_magne,ndwi_jfm,rainfall,
+    cursor.execute('''select ppp_sum,soil_copper,soil_phos,soil_potas,soil_boron,soil_alumi,soil_iron,soil_magne,ndwi_jfm,presp_jfm,
     ndvi_jfm,land_cover,slope,elevation,lst_jfm,
-     gs_id from public.agric_indicator where gs_id<24320''')
-
-
+     gs_id from public.agric_indicator''')
 
     agricRows=cursor.fetchall()
 
