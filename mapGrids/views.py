@@ -51,7 +51,7 @@ SELECT row_to_json(fc) FROM
             ) As l
         )
         ) As properties , lg.id, lg.rsd_id, lg.gs_id
-        FROM public.geometric_structure  As lg where lg.gs_id<100
+        FROM public.geometric_structure  As lg
     ) As f 
 )  As fc;
  ''')
