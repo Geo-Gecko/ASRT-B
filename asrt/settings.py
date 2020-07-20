@@ -94,23 +94,6 @@ WSGI_APPLICATION = 'asrt.wsgi.application'
 import dj_database_url
 DATABASES = {'default': dj_database_url.config(conn_max_age=600)}
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'project_taco_db',
-#         'USER': 'postgres',
-#         'PASSWORD': 'lambtex',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-        
-         
-#     }
-# }
-
-
-# Password validation
-# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
